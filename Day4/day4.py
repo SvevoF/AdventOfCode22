@@ -22,16 +22,11 @@ def overlap(sections):
 	for section in sections:
 		first = True
 		for i in range(int(section[0].split('-')[0]), int(section[0].split('-')[1]) + 1):
-			#print(section)
-			# print(i)
 			if i in range(int(section[1].split('-')[0]), int(section[1].split('-')[1]) + 1) and first:
 				counter += 1
-				#print("here")
-				#print(section)
 				first = False
-
-		else:
-			continue
+			else:
+				continue
 
 	return counter
 
