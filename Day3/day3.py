@@ -37,8 +37,7 @@ for pocket in pockets:
 			first = False
 			repeated.append(value(char))
 
-print("Result problem 1:")
-print(sum(repeated))
+print(f"Solution of Part 1: {sum(repeated)}")
 
 groups = []
 badges = []
@@ -54,5 +53,4 @@ for group in groups:
 			first = False
 			badges.append(value(char))
 
-print("Result problem 2:")
-print(sum(badges))
+print(f"Solution of Part 2: {sum(badges)}")

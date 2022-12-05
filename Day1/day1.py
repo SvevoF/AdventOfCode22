@@ -21,4 +21,4 @@ for i in range(3):
 	total += max_bag
 	bags_tot.remove(max_bag)
 
-print(total)
+print(f"Solution of Part 2: {total}")

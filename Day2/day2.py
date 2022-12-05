@@ -35,7 +35,7 @@ def result(opponent, player):
 	else:
 		print('no worki')
 	points.append(point)
-	print(point)
+	# print(point)
 
 # print(ord('C') - ord('X'))
 
@@ -60,7 +60,13 @@ def result_new(opponent, result):
 for line in strategies:
 	opponent, player = line.split(" ")
 	# final += result(opponent, player)
+	result(opponent, player[:-1])
+
+print(f"Solution of Part 1: {sum(points)}")
+
+for line in strategies:
+	opponent, player = line.split(" ")
+	# final += result(opponent, player)
 	result_new(opponent, player[:-1])
 
-result = sum(points)
-print(result)
+print(f"Solution of Part 2: {sum(points)}")

@@ -31,6 +31,5 @@ def overlap(sections):
 	return counter
 
 
-print(f"Result for the first part: {contained(sections)}")
-print(f"Result for the second part: {overlap(sections)}")
-
+print(f"Solution of Part 1: {contained(sections)}")
+print(f"Solution of Part 2: {overlap(sections)}")
